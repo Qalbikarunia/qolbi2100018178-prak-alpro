@@ -1,6 +1,4 @@
 #include <iostream>
-#include <conio.h>
-#include <string>
 using namespace std;
 
 int main(){
@@ -29,44 +27,23 @@ int main(){
 	cout<<"masukan bilangan pertama : ";cin>>bil1;
 
 	cout<<"masukan biangan ke dua : ";cin>>bil2;
-
+	cout<<endl;
 	
-
-	switch(pil){
-
-		case 1 : hasil=bil1+bil2;
-
-		operasi = '+';
-
-		break;
-
-		case 2 : hasil=bil1-bil2;
-
-		operasi = '-';
-
-		break;
-
-		case 3 : hasil=bil1*bil2;
-
-		operasi = '*';
-
-		break;
-
-		case 4 : hasil=bil1/bil2;
-
-		operasi = '/';
-
-		break;
-
+	if(pil == 1){
+		hasil = bil1 + bil2;
+		cout<<bil1<<" + "<<bil2<<" = "<<hasil<<endl;
+	}else if(pil == 2){
+		hasil = bil1 - bil2;
+		cout<<bil1<<" - "<<bil2<<" = "<<hasil<<endl;
+	}else if(pil == 3){
+		hasil = bil1 * bil2;
+		cout<<bil1<<" x "<<bil2<<" = "<<hasil<<endl;
+	}else if(pil == 4){
+		hasil = bil1 / bil2;
+		cout<<bil1<<" / "<<bil2<<" = "<<hasil<<endl;
+	}else{
+		cout<<"Pilihan anda salah !"<<endl;
 	}
-
-	cout<<"\n";
-
-	cout<<"==============================================="<<endl;
-
-	cout<<"   "<<bil1<<operasi<<bil2<<"="<<hasil<<endl;
-
-	cout<<"==============================================="<<endl;
-
-	getch();
+	
+	return 0;
 }
